@@ -1,0 +1,19 @@
+[package]
+name = "fwasm-sdk"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { version = "1", features = [
+    "sync",
+    "macros",
+    "rt",
+    "io-util",
+    "time",
+] }
+fwasm-primitives = { path = "../../primitives", package = "fwasm-primitives", default-features = false }
+fwasm-macros = { path = "../fwasm-macros" }
+anyhow = "1"
+wasm-bindgen = "0.2.92"
+codec = { workspace = true }

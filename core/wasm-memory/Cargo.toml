@@ -1,0 +1,14 @@
+[package]
+name = "fwasm-memory"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+fwasm-sdk = { path = "../fwasm-sdk" }
+wasmtime = { workspace = true }
+anyhow = "1"
+log = "0.4"
+env_logger = "0.10"
+rocksdb = "0.21.0"

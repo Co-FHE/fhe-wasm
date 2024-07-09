@@ -1,0 +1,3 @@
+[submodule "interpreter/wasmi"]
+	path = interpreter/wasmi
+	url = git@github.com:Co-FHE/wasmi.git
